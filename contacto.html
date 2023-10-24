@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/Estilos-contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100&family=Open+Sans:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="padre">
+        <header class="header margen-interno">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html">AnimeLovers</a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html"><i class="fa-solid fa-shop"></i><span class="off">Inicio</span></a>
+                    <a href="nosotros.html"><i class="fa-solid fa-users"></i><span class="off">Nosotros</span></a>
+                    <a href="servicios.html"><i class="fa-solid fa-laptop"></i><span class="off">Servicios</span></a>
+                    <a href="#"><i class="fa-solid fa-newspaper"></i><span class="off">Noticias</span></a>
+                    <a href="contacto.html"><i class="fa-solid fa-address-book"></i><span
+                            class="off">Contacto</span></a>
+                </nav>
+                <div class="social">
+                    <div><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                    <div><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></div>
+                </div>
+            </div>
+
+            <div class="texto margen-interno">
+                <h1>
+                    Los animes shonen abarcan una amplia variedad de géneros, desde la fantasía y la ciencia ficción
+                    hasta las artes marciales y la aventura. Lo que los une es su capacidad para contar historias
+                    emocionantes y llenas de valores como la amistad, la superación personal y la perseverancia. En este
+                    artículo, exploraremos algunos de los mejores animes shonen de todos los tiempos, destacando sus
+                    tramas intrigantes, personajes inolvidables y la influencia duradera que han tenido en la cultura
+                    pop. Desde "Naruto" hasta "One Piece" y más allá, los amantes del anime encontrarán un mundo de
+                    emocionantes aventuras por descubrir en el fascinante universo de los animes shonen. ¡Prepárate para
+                    sumergirte en un viaje lleno de acción y emoción que te mantendrá al borde de tu asiento!
+                </h1>
+            </div>
+        </header>
+        <section class="section margen-interno">
+            <div class="articulos">
+                <article class="article">
+                    <h1 class="titulo">Formulario de Datos Personales</h1>
+                    <br>
+                    <form action="procesar_formulario.php" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+                        <label for="direccion">Dirección:</label>
+                        <textarea id="direccion" name="direccion" rows="4" required></textarea><br><br>
+                        <br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                    <br>
+
+                    
+                </article>
+                <nav class="navegacion">
+                    <a href="#">Inicio</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">Final</a>
+                </nav>
+            </div>
+        </section>
+        <footer class="footer margen-interno">
+            <nav class="pie">
+                <a href="#">Desarrollado por Nycolas Cabrera</a>
+            </nav>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/3ebb647c5a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
