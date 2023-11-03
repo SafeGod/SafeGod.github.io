@@ -8,14 +8,30 @@ a{
     text-decoration: none;
 }
 
+img{
+    object-fit: cover;
+}
+
+.im img{
+    opacity: .7;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+}
+
+.black-bg{
+    background-color: var(--black);
+}
+
+.z1 {
+    z-index: 1;
+}
+
 body{
     font-family: 'Noto Sans Arabic', sans-serif;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
-}
-
-img{
-    object-fit: cover;
 }
 
 .padre{
@@ -27,7 +43,7 @@ img{
 }
 
 .header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://wallpapers.com/images/hd/manga-panel-background-pkgv0xar1xszeeol.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.redd.it/ciupn6qsktf31.jpg);
     background-position: center;
     background-position: center;
     background-attachment: contain;
@@ -35,10 +51,6 @@ img{
     display: flex;
     flex-flow: column nowrap;
 }
-
-    .parrafo{
-        text-align: center;
-    }
 
     .menu{
         background: rgba(0, 0, 0, 0.5);
@@ -116,18 +128,13 @@ img{
 
 }
 
-.titulo{
-    color: #000;
-    text-align: left;
-}
-
     .articulos{
         background: #f7f7f7;
         flex: 2 1 auto;
+        display: flex;
         flex-flow: row wrap;
         
     }
-
         .article{
             background: #930760;
             flex: 1 1 40%;
@@ -157,23 +164,23 @@ img{
         }
 
         h3{
-            color: #fff;
+            color: #000;
             font-size: 13px;
             padding: 10px 0;
             margin-top: -80px;
-            text-align: center;
-        }
-
-        h2{
-            color: #fff;
-            text-transform: uppercase;
-            padding: 0px 0 10px 0;
-            font-size: 25px;
-            text-align: center;
         }
 
         .blanco{
             color: #fff;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        h2{
+            color: #000;
+            text-transform: uppercase;
+            padding: 0px 0 10px 0;
+            font-size: 25px;
         }
 
         .navegacion{
@@ -189,6 +196,16 @@ img{
             padding: 0 10px;
             letter-spacing: 2px;
         }
+    
+    .aside{
+        /*background: #ef0101;*/ 
+        flex: 1 1 auto;
+        margin: 10px 5px 10px 0;
+    }
+
+    .aside img{
+        width: 100%;
+    }
 
     h4{
         background: #000;
@@ -230,11 +247,12 @@ img{
         justify-content: center;
     }
     h1{
-        font-size: 13px;
+        font-size: 14px;
     }
     .texto{
         height: 450px;
     }
+
     .blanco{
         font-size: 14px;
     }
@@ -260,4 +278,8 @@ img{
     .aside{
         flex-direction: column;
     }
+}
+
+:root{
+    --black: #000;
 }

@@ -11,6 +11,27 @@ a{
 body{
     font-family: 'Noto Sans Arabic', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+img{
+    object-fit: cover;
+}
+
+.im img{
+    opacity: .7;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+}
+
+.black-bg{
+    background-color: var(--black);
+}
+
+.z1 {
+    z-index: 1;
 }
 
 .padre{
@@ -22,7 +43,7 @@ body{
 }
 
 .header{
-    background: url(../IMG/pexels.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://staticg.sportskeeda.com/editor/2022/04/791d5-16508777693893-1920.jpg);
     background-position: center;
     background-attachment: contain;
     background-size: cover;
@@ -37,11 +58,13 @@ body{
         align-items: center;
         height: 60px;
         border-bottom: 1px solid rgba(255, 255, 255, .5);
+        position: relative;
     }
 
         .logo{
             flex: 1 1 auto;
             padding: 15px;
+            position: relative;
         }
             .logo a{
                 color: #fff;
@@ -55,6 +78,7 @@ body{
         .nav{
             letter-spacing: 20px;
             flex: 5 1 auto;
+            position: relative;
         }
 
             .nav a{
@@ -91,12 +115,14 @@ body{
     }
         h1{
             font-family: 'Lora', serif;
-            font-size: 21px;
+            font-size: 25px;
             color: #fff;
             font-weight: 300;
             text-align: center;
-            line-height: 1.6;
-        }     
+            line-height: 2;
+            -webkit-text-stroke-width: .6px;
+            -webkit-text-stroke-color: rgb(8, 175, 122);
+        }
 
 .section{
     background: #f7f7f7;
@@ -142,9 +168,15 @@ body{
 
         h3{
             color: #000;
-            font-size: 13px;
+            font-size: 17px;
             padding: 10px 0;
             margin-top: -80px;
+        }
+
+        .blanco{
+            color: #fff;
+            padding-left: 2rem;
+            position: relative;
         }
 
         h2{
@@ -218,10 +250,13 @@ body{
         justify-content: center;
     }
     h1{
-        font-size: 15px;
+        font-size: 14px;
     }
     .texto{
         height: 450px;
+    }
+    .blanco{
+        font-size: 14px;
     }
 }
 
@@ -245,4 +280,8 @@ body{
     .aside{
         flex-direction: column;
     }
+}
+
+:root{
+    --black: black;
 }

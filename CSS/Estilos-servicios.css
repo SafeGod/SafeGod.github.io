@@ -11,6 +11,27 @@ a{
 body{
     font-family: 'Noto Sans Arabic', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+img{
+    object-fit: cover;
+}
+
+.im img{
+    opacity: .7;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+}
+
+.black-bg{
+    background-color: var(--black);
+}
+
+.z1 {
+    z-index: 1;
 }
 
 .padre{
@@ -22,7 +43,8 @@ body{
 }
 
 .header{
-    background: url(../IMG/pexels.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://w.wallhaven.cc/full/e7/wallhaven-e7215k.png);
+    background-position: center;
     background-position: center;
     background-attachment: contain;
     background-size: cover;
@@ -91,11 +113,13 @@ body{
     }
         h1{
             font-family: 'Lora', serif;
-            font-size: 21px;
+            font-size: 25px;
             color: #fff;
             font-weight: 300;
             text-align: center;
-            line-height: 1.6;
+            line-height: 2;
+            -webkit-text-stroke-width: .6px;
+            -webkit-text-stroke-color: rgb(8, 175, 122);
         }     
 
 .section{
@@ -125,6 +149,8 @@ body{
 
         .blanco{
             color: #fff;
+            padding-left: 2rem;
+            position: relative;
         }
 
         .article img{
@@ -139,6 +165,8 @@ body{
             margin: 10px 0;
             display: inline-block;
         }
+
+
 
         .article a:hover{
             background: #546cc3;
@@ -222,10 +250,13 @@ body{
         justify-content: center;
     }
     h1{
-        font-size: 15px;
+        font-size: 14px;
     }
     .texto{
         height: 450px;
+    }
+    .blanco{
+        font-size: 14px;
     }
 }
 
@@ -249,4 +280,7 @@ body{
     .aside{
         flex-direction: column;
     }
+}
+:root{
+    --black: #000;
 }
