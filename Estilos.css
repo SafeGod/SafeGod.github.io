@@ -330,13 +330,22 @@ img{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .menu {
         padding: 10px;
     }
 
-    h1{
-        font-size: 8px;
+    h1 {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    
+    h1 {
+        font-size: 12px;
+        padding: 7px;
     }
 }
 
