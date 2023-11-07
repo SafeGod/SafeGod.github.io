@@ -1,0 +1,345 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+img{
+    object-fit: cover;
+}
+
+.im img{
+    opacity: .7;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+}
+
+.black-bg{
+    background-color: var(--black);
+}
+
+.z1 {
+    z-index: 1;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.margen-interno{
+    padding: 0 50px;
+}
+
+.header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://staticg.sportskeeda.com/editor/2022/04/791d5-16508777693893-1920.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .menu{
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        height: 60px;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+        position: relative;
+    }
+
+        .logo{
+            flex: 1 1 auto;
+            padding: 15px;
+            position: relative;
+            padding-top: 35px;
+            padding-left: 50px;
+        }
+            .logo a{
+                color: #fff;
+                font-size: 30px;              
+            }
+
+            .logo a:hover{
+                color: #343434;
+            }
+
+        .nav{
+            letter-spacing: 20px;
+            flex: 5 1 auto;
+            position: relative;
+        }
+
+            .nav a{
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: o 10px;
+                letter-spacing: 2px;
+            }
+
+            .nav a:hover{
+                color: #343434;
+            }
+
+        .social{
+            flex: 1 1 auto;
+            display: flex;
+        }
+            
+            .social a{
+                font-size: 18px;
+                color: #fff;
+                padding: 0 5px;
+            }
+
+            .social a:hover{
+                color: #343434;
+            }
+    
+    .texto{
+     height: 580px;
+     display: flex;
+     align-items: center;
+    }
+        h1{
+            border-radius: 4%;
+            background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
+            font-family: 'Lora', serif;
+            font-size: 25px;
+            color: #fff;
+            font-weight: 300;
+            text-align: center;
+            line-height: 2;
+            /*-webkit-text-stroke-width: .6px;*/
+            /*-webkit-text-stroke-color: rgb(8, 175, 122);*/
+        }
+
+.section{
+    background: #f7f7f7;
+    display: flex;
+
+}
+
+    .articulos{
+        background: #f7f7f7;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+        
+    }
+
+        .article{
+            background: #930760;
+            flex: 1 1 40%;
+            color: #000;
+            font-size: 13px;
+            letter-spacing: 1px;
+            padding: 10px 10px 0 0;  
+            flex: 1 1 45%;
+            background: #ececec;
+        }
+
+        .article img{
+            width: 100%;
+        }
+
+        .article a{
+            color: #fff;
+            font-size: 13px;
+            padding: 10px;
+            background: #000;
+            margin: 10px 0;
+            display: inline-block;
+            border-radius: 13%;
+        }
+
+        .article a:hover{
+            background: #546cc3;
+        }
+
+        h3{
+            color: #000;
+            font-size: 17px;
+            padding: 10px 0;
+            margin-top: -80px;
+        }
+
+        .blanco{
+            color: #fff;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        h2{
+            color: #000;
+            text-transform: uppercase;
+            padding: 0px 0 10px 0;
+            font-size: 25px;
+        }
+
+        .navegacion{
+            background: #000;
+            flex: 1 1 100%;
+            margin: 10px 10px 0 0px;
+        }
+
+        .navegacion a{
+            color: #fff;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+        }
+    
+    .aside{
+        /*background: #ef0101;*/ 
+        flex: 1 1 auto;
+        margin: 10px 5px 10px 0;
+    }
+
+    .aside img{
+        width: 100%;
+    }
+
+    h4{
+        background: #000;
+        color: white;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+    .pie{
+        text-align: center;
+        
+    }
+
+    .pie a{
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 12px;
+    }
+
+@media all and (max-width: 1120px){
+    .section {
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        font-size: 14px;
+    }
+    .texto{
+        height: 450px;
+    }
+    .blanco{
+        font-size: 14px;
+    }
+
+    p{
+        padding: 10px;
+    }
+}
+
+@media all  and (max-width: 762px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+
+@media all  and (max-width: 650px){
+    .off{
+        display: none;
+    }
+    .nav a{
+        font-size: 25px;
+    }
+    
+}
+
+@media all  and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav {
+        letter-spacing: 5px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .texto {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 762px) {
+    .articulos {
+        flex-direction: column;
+    }
+
+    .article {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .off {
+        display: none;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 8px;
+    }
+}
+
+:root{
+    --black: black;
+}
