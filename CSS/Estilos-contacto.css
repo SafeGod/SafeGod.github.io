@@ -67,6 +67,7 @@ img{
         .nav{
             letter-spacing: 20px;
             flex: 5 1 auto;
+            position: relative;
         }
 
             .nav a{
@@ -221,47 +222,118 @@ img{
         letter-spacing: 12px;
     }
     
-@media screen and (max-width: 1120px) {
-    .menu {
-        flex-direction: column;
-        height: auto;
-    }
 
-    .nav {
-        letter-spacing: 5px;
+    @media all and (max-width: 1120px){
+        .section {
+            flex-direction: column;
+        }
+        .menu{
+            flex-direction: column;
+            height: auto;
+        }
+        .aside{
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            font-size: 14px;
+        }
+        .texto{
+            height: 450px;
+        }
+        .blanco{
+            font-size: 14px;
+        }
+    
+        p{
+            padding: 10px;
+        }
     }
-
-    h1 {
-        font-size: 14px;
+    
+    @media all  and (max-width: 762px){
+        .articulos{
+            flex-direction: column;
+        }
     }
-
-    .texto {
-        padding: 10px;
+    
+    @media all  and (max-width: 650px){
+        .off{
+            display: none;
+        }
+        .nav a{
+            font-size: 25px;
+        }
+        
     }
-}
-
-@media screen and (max-width: 762px) {
-    .articulos {
-        flex-direction: column;
+    
+    @media all  and (max-width: 400px){
+        .aside{
+            flex-direction: column;
+        }
     }
-
-    .article {
-        flex: 1 1 100%;
+    
+    @media screen and (max-width: 1120px) {
+        .menu {
+            flex-direction: column;
+            height: auto;
+        }
+    
+        .nav {
+            letter-spacing: 5px;
+        }
+    
+        h1 {
+            font-size: 14px;
+        }
+    
+        .texto {
+            padding: 10px;
+        }
     }
-}
-
-@media screen and (max-width: 650px) {
-    .off {
-        display: none;
+    
+    @media screen and (max-width: 762px) {
+        .articulos {
+            flex-direction: column;
+        }
+    
+        .article {
+            flex: 1 1 100%;
+        }
     }
-
-    .nav a {
-        font-size: 14px;
+    
+    @media screen and (max-width: 650px) {
+        .off {
+            display: none;
+        }
+    
+        .nav a {
+            font-size: 14px;
+        }
     }
-}
-
-@media screen and (max-width: 400px) {
-    .menu {
-        padding: 10px;
+    
+    @media screen and (max-width: 480px) {
+        .menu {
+            padding: 10px;
+        }
+    
+        h1 {
+            font-size: 11px;
+            padding: 10px;
+        }
     }
-}
+    
+    @media screen and (max-width: 380px) {
+        
+        h1 {
+            font-size: 11px;
+            padding: 7px;
+        }
+    }
+    
+    @media screen and (max-width: 360px) {
+        
+        h1 {
+            font-size: 10px;
+            padding: 7px;
+        }
+    }

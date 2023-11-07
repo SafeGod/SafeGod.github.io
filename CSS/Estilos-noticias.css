@@ -79,6 +79,7 @@ body{
         .nav{
             letter-spacing: 20px;
             flex: 5 1 auto;
+            position: relative;
         }
 
             .nav a{
@@ -257,9 +258,12 @@ body{
     .texto{
         height: 450px;
     }
-
     .blanco{
         font-size: 14px;
+    }
+
+    p{
+        padding: 10px;
     }
 }
 
@@ -302,10 +306,6 @@ body{
     .texto {
         padding: 10px;
     }
-
-    p{
-        padding: 10px;
-    }
 }
 
 @media screen and (max-width: 762px) {
@@ -328,12 +328,32 @@ body{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .menu {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 12px;
         padding: 10px;
     }
 }
 
+@media screen and (max-width: 380px) {
+    
+    h1 {
+        font-size: 11px;
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+    h1 {
+        font-size: 10px;
+        padding: 7px;
+    }
+}
 :root{
     --black: #000;
 }
