@@ -132,10 +132,10 @@ img{
     }
 
         .article{
-            background: #930760;
+            background: #0c0c0c;
             flex: 1 1 40%;
-            color: #000;
-            font-size: 13px;
+            color: #000000;
+            font-size: 16px;
             letter-spacing: 1px;
             padding: 10px 10px 0 0;  
             flex: 1 1 45%;
