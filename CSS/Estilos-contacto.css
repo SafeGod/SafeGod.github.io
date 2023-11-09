@@ -116,9 +116,13 @@ img{
         }     
 
 .section{
-    background: #f7f7f7;
+    background: #1a1a1a;
     display: flex;
+    justify-content: center;
+}
 
+.form{
+    margin-left: 60px;
 }
 
 .titulo{
@@ -202,11 +206,216 @@ img{
         text-transform: uppercase;
     }
 
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 500px;
+        height: 500px;
+        padding: 20px;
+        border-radius: 30px;
+        position: relative;
+        background-color: #1a1a1a;
+        color: #fff;
+        border: 1px solid #e6e3e3;
+        margin-top: 70px;
+        margin-bottom: 70px;
+      }
+      
+      .title {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        color: #00bfff;
+      }
+      
+      .title::before {
+        width: 18px;
+        height: 18px;
+      }
+      
+      .title::after {
+        width: 18px;
+        height: 18px;
+        animation: pulse 1s linear infinite;
+      }
+      
+      .title::before,
+      .title::after {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        left: 0px;
+        background-color: #00bfff;
+      }
+      
+      .message, 
+      .signin {
+        font-size: 14.5px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .flex {
+        display: flex;
+        width: 100%;
+        gap: 6px;
+      }
+      
+      .form label {
+        position: relative;
+      }
+      
+      .form label .input {
+        background-color: #333;
+        color: #fff;
+        width: 100%;
+        padding: 20px 05px 05px 10px;
+        outline: 0;
+        border: 1px solid rgba(105, 105, 105, 0.397);
+        border-radius: 10px;
+      }
+      
+      .form label .input + span {
+        color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        left: 10px;
+        top: 0px;
+        font-size: 0.9em;
+        cursor: text;
+        transition: 0.3s ease;
+      }
+      
+      .form label .input:placeholder-shown + span {
+        top: 12.5px;
+        font-size: 0.9em;
+      }
+      
+      .form label .input:focus + span,
+      .form label .input:valid + span {
+        color: #00bfff;
+        top: 0px;
+        font-size: 0.7em;
+        font-weight: 600;
+      }
+      
+      .input {
+        font-size: medium;
+      }
+      
+      .submit {
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 16px;
+        transform: .3s ease;
+        background-color: #00bfff;
+      }
+      
+      .submit:hover {
+        background-color: #00bfff96;
+      }
+      
+      @keyframes pulse {
+        from {
+          transform: scale(0.9);
+          opacity: 1;
+        }
+      
+        to {
+          transform: scale(1.8);
+          opacity: 0;
+        }
+      }
+
+      .card {
+        background: #171717;
+        transition: 1s ease-in-out;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        width: 500px;
+        height: 500px;
+        border-radius: 30px;
+        border: 1px solid #fff;
+        
+      }
+      
+      .card span {
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        display: block;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+      
+      .card .info {
+        font-weight: 400;
+        color: white;
+        display: block;
+        text-align: center;
+        font-size: 17px;
+        margin: 1em;
+      }
+      
+      .card .img {
+        width: 100%;
+        background-image: url(/IMG/lg\ \(6\).png);
+        border-radius: 15px;
+        margin: auto;
+        width: 100px;
+        height: 55px;
+      }
+      
+      .card .share {
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+      }
+      
+      .card a {
+        color: white;
+        transition: .4s ease-in-out;
+      }
+      
+      .card a:hover {
+        color: red;
+      }
+      
+      .card .sexo {
+        padding: 0.8em 1.7em;
+        display: block;
+        margin: auto;
+        border-radius: 25px;
+        border: none;
+        font-weight: bold;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        transition: .4s ease-in-out;
+      }
+      
+      .card .sexo:hover {
+        background: red;
+        color: white;
+        cursor: pointer;
+      }
+
 .footer{
     background: #000;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 }
 
     .pie{
@@ -337,3 +546,16 @@ img{
             padding: 7px;
         }
     }
+
+    @media screen and (max-width: 650px) {
+    .card {
+        width: 90%;
+    }
+
+    .form {
+        width: 90%;
+        margin-left: 0px;
+    }
+
+ 
+}
